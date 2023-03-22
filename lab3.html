@@ -40,6 +40,15 @@
                 margin-left: 2cm;
                 text-indent: 0;
             }
+            .shadow {
+                text-shadow: 5px 5px 2px gray;
+            }
+            h1 {
+                transition: 600ms 1s;
+            }
+            h1:hover {
+                text-shadow: 5px 5px 2px gray
+            }
         </style>
     </head>
     <body>
@@ -91,6 +100,9 @@
             <div class="formula">
             Чистые активы = стр.1300 - ЗУ + ДБП
             </div>
+            <div class="shadow">Тень</div>
+            <div style="text-shadow: -5px 5px 2px blue;">Синяя тень слева снизу</div>
+            <div style="text-shadow: 0px 0px 3px blue;">Синее размытие</div>
         </main>
         <footer>
             &copy; <i>Тарбанаков Артем, ФБИ-14, 2 курс, 2023</i>
