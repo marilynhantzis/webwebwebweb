@@ -15,6 +15,9 @@ footer {
     color:lightgray; 
     padding: 
     20px;font-size: 16pt;}
+a {
+    transition: 600ms 1s;
+}
 a:visited {
     color:black;
     background-color:red;
@@ -23,9 +26,12 @@ a:hover {
     color:red;
     text-decoration: underline;
     background-color: white;
-    font-weight: bold
+    font-weight: bold;
+    transition: 600ms 0.1s;
+    text-shadow: 5px 5px 2px gray;
 }
 a:active {
     color:pink;
     background-color: green;
 }
+ 
