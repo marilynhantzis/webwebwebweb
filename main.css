@@ -14,5 +14,18 @@ footer {
     background-color:black;
     color:lightgray; 
     padding: 
-    20px;font-size: 16pt;
+    20px;font-size: 16pt;}
+a:visited {
+    color:black;
+    background-color:red;
+}
+a:hover {
+    color:red;
+    text-decoration: underline;
+    background-color: white;
+    font-weight: bold
+}
+a:active {
+    color:pink;
+    background-color: green;
 }
