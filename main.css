@@ -10,11 +10,21 @@ header {
     padding: 
     20px;font-size: 16pt;
 }
+header:hover {
+    font-weight: bold;
+    text-shadow: 5px 5px 2px gray;
+    transition: 600ms 0.3s;
+}
 footer {
     background-color:black;
     color:lightgray; 
     padding: 
     20px;font-size: 16pt;}
+footer:hover {
+    font-weight: bold;
+    text-shadow: 5px 5px 2px gray;
+    transition: 600ms 0.3s;
+}
 a {
     transition: 600ms 1s;
 }
