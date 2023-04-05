@@ -1,3 +1,4 @@
+
 body {
     background-color:lightgray;
     color:black; 
@@ -5,25 +6,39 @@ body {
     font-size: 16pt;
 }
 header {
+    z-index: 3;
+    position: fixed;
+    top:0;
     background: linear-gradient(to right bottom, black,red,green,yellow);
     color:lightgray; 
-    padding: 
-    20px;font-size: 16pt;
+    padding:20px;
+    font-size: 16pt;
+    width:100%;
+    left:0;   
 }
+
+
 header:hover {
     font-weight: bold;
     text-shadow: 5px 5px 2px gray;
     transition: 600ms 0.3s;
 }
 footer {
+    z-index: 1;
     background-color:black;
     color:lightgray; 
-    padding: 
-    20px;font-size: 16pt;}
+    padding:20px;
+    font-size: 16pt;
+    text-align: right;
+    position: fixed;
+    bottom:0;
+    width:97%;
+}
 footer:hover {
     font-weight: bold;
     text-shadow: 5px 5px 2px gray;
     transition: 600ms 0.3s;
+    text-align: right;
 }
 a {
     transition: 600ms 1s;
@@ -45,3 +60,97 @@ a:active {
     background-color: green;
 }
  
+.main {
+    top:25px;
+    margin:20px;
+    border:1px solid;
+    border-radius: 7px;
+    padding: 7px;
+    width: 500px;
+    height: 170px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    background: linear-gradient(#ccf,#ddf);
+    z-index: 2;
+    margin-left: 320px;
+}
+
+
+.second {
+    z-index: 1;
+    left: 580px;
+    top: 100px;
+    position: fixed;
+    border:1px solid;
+    border-radius: 7px;
+    padding: 7px;
+    width: 500px;
+    height: 170px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: linear-gradient(#ccf,#ddf);
+}
+
+.second:hover {
+    z-index: 3;
+    left: 580px;
+    top: 100px;
+    position: fixed;
+}
+
+aside {
+    z-index: 2;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 300px;
+    background: bisque;
+    height:100%;
+    overflow:auto;
+}
+
+aside div {
+    color:black;
+    padding:10px;
+    text-align: justify;
+    text-indent:20px;
+}
+
+.comix {
+    position:fixed;
+    left: 950px;
+    top: 500px;
+    display: none;
+}
+
+.text1 {
+    position:fixed;
+    border:1px;
+    border-radius: 50px;
+    border-color: black;
+    left:1099px;
+    top: 400px;
+    background: white;
+    padding:5px;
+}
+
+.text2 {
+    position:fixed;
+    left: 950px;
+    top: 500px;
+}
+
+.text3 {
+    position:fixed;
+    left: 950px;
+    top: 500px;
+}
+
+.text4 {
+    position:fixed;
+    left: 950px;
+    top: 500px;
+}
+
+
