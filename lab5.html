@@ -15,6 +15,30 @@
                 let result = a+b;
                 alert('Сумма ' + a + ' и ' + b + ' равна ' + result);
             }
+            function showRaz() {
+                let inputA=document.getElementById('numberA')
+                let inputB=document.getElementById('numberB')
+                let a = parseInt(inputA.value);
+                let b = parseInt(inputB.value);
+                let result = a-b;
+                alert('Разность ' + a + ' и ' + b + ' равна ' + result);
+            }
+            function showProiz() {
+                let inputA=document.getElementById('numberA')
+                let inputB=document.getElementById('numberB')
+                let a = parseInt(inputA.value);
+                let b = parseInt(inputB.value);
+                let result = a*b;
+                alert('Произведение ' + a + ' и ' + b + ' равна ' + result);
+            }
+            function showDel() {
+                let inputA=document.getElementById('numberA')
+                let inputB=document.getElementById('numberB')
+                let a = parseInt(inputA.value);
+                let b = parseInt(inputB.value);
+                let result = a/b;
+                alert('Произведение ' + a + ' и ' + b + ' равна ' + result);
+            }
             function getAuthor() {
                 let author = "Автор страницы:\nТарбанаков Артем Сергеевч";
                 alert(author);
@@ -46,6 +70,9 @@
             <label>Второе число: <input type="number" value="7891" id="numberB"></label>
             <div class="message" onclick="showSum()">Найти сумму чисел</div>
             <div class="message" onclick="getAuthor()">Узнать, кто автор страницы</div>
+            <div class="message" onclick="showRaz()">Найти разность чисел</div>
+            <div class="message" onclick="showProiz()">Найти произведение чисел</div>
+            <div class="message" onclick="showDel()">Найти разницу чисел</div>
         </main>
         <footer onclick="getAuthor()">
             &copy; <i>Тарбанаков Артем, ФБИ-14, 2 курс, 2023</i>
