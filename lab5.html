@@ -43,6 +43,12 @@
                 let author = "Автор страницы:\nТарбанаков Артем Сергеевч";
                 alert(author);
             }
+            function changeOutput(buttonNum, backColor, textColor) {
+                let output = document.getElementById('output')
+                output.innerHTML = 'Нажата кнопка' + buttonNum;
+                output.style.backgroundColor = backColor;
+                output.style.color= textColor;
+            }
         </script>
         <style>
             main {
@@ -59,6 +65,11 @@
                 padding: 5px;
                 cursor: pointer;
             }
+            #output { 
+                border:1px solid;
+                width: 300px;
+                height: 40px;
+            }
         </style>
     </head>
     <body>
@@ -71,8 +82,17 @@
             <div class="message" onclick="showSum()">Найти сумму чисел</div>
             <div class="message" onclick="getAuthor()">Узнать, кто автор страницы</div>
             <div class="message" onclick="showRaz()">Найти разность чисел</div>
-            <div class="message" onclick="showProiz()">Найти произведение чисел</div>
-            <div class="message" onclick="showDel()">Найти разницу чисел</div>
+            <div>
+                <div class="message" onclick="showProiz()">Найти произведение чисел</div>
+                <div class="message" onclick="showDel()">Найти разницу чисел</div>
+            </div>
+            <div>
+                <input type="button" value="Кнопка 1" onclick="changeOutput(1,'red','white')">
+                <input type="button" value="Кнопка 2" onclick="changeOutput(2,'black','white')">
+                <input type="button" value="Кнопка 3" onclick="changeOutput(3,'green','white')">
+                <input type="button" value="Кнопка 4" onclick="changeOutput(4,'blue','white')">
+            </div>
+            <div id="output"></div>
         </main>
         <footer onclick="getAuthor()">
             &copy; <i>Тарбанаков Артем, ФБИ-14, 2 курс, 2023</i>
