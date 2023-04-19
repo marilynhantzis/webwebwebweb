@@ -8,10 +8,14 @@
         <link rel="stylesheet" href="main.css">
         <script>
             function showSum() {
-            let a = 5154;
-            let b = 7891;
-            let result = a+b;
-            alert('Сумма ' + a + ' и ' + b + ' равна ' + result)
+                let a = 5154;
+                let b = 7891;
+                let result = a+b;
+                alert('Сумма ' + a + ' и ' + b + ' равна ' + result);
+            }
+            function getAuthor() {
+                let author = "Автор страницы:\nТарбанаков Артем Сергеевч";
+                alert(author);
             }
         </script>
         <style>
@@ -37,9 +41,9 @@
         </header>
         <main>
             <div class="message" onclick="showSum()">Сколько будет 5154+7891?</div>
-            <div class="message">Узнать, кто автор страницы</div>
+            <div class="message" onclick="getAuthor()">Узнать, кто автор страницы</div>
         </main>
-        <footer>
+        <footer onclick="getAuthor()">
             &copy; <i>Тарбанаков Артем, ФБИ-14, 2 курс, 2023</i>
         </footer>
     </body>
