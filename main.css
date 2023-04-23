@@ -121,36 +121,131 @@ aside div {
     position:fixed;
     left: 950px;
     top: 500px;
-    display: none;
+    z-index: 3;
 }
 
 .text1 {
+    z-index: 4;
     position:fixed;
     border:1px;
-    border-radius: 50px;
+    border-radius: 50%;
     border-color: black;
     left:1099px;
-    top: 400px;
+    top: 600px;
     background: white;
-    padding:5px;
+    padding:2px;
+    color:white;
+    font-size: 12px;
+    opacity: 0;
 }
 
 .text2 {
+    z-index: 4;
     position:fixed;
-    left: 950px;
-    top: 500px;
+    left: 1067px;
+    top: 577px;
+    border:1px;
+    border-radius: 50%;
+    border-color: black;
+    background: white;
+    padding:8px;
+    color:white;
+    font-size: 8px;
+    opacity: 0;
 }
 
 .text3 {
+    z-index: 4;
     position:fixed;
-    left: 950px;
-    top: 500px;
+    left: 1020px;
+    top: 540px;
+    border:1px;
+    border-radius: 50%;
+    border-color: black;
+    background: white;
+    padding:15px;
+    color:white;
+    font-size: 8px;
+    opacity: 0;
 }
 
 .text4 {
+    z-index: 4;
     position:fixed;
-    left: 950px;
-    top: 500px;
+    left: 895px;
+    top: 475px;
+    position:fixed;
+    border:1px;
+    border-radius: 80%;
+    border-color: black;
+    background: white;
+    padding:30px;
+    color:black;
+    font-size: 16px;
+    opacity: 0;
 }
 
+.comix:hover + .text1 {
+    z-index: 4;
+    position:fixed;
+    border:1px;
+    border-radius: 50%;
+    border-color: black;
+    left:1099px;
+    top: 600px;
+    background: white;
+    padding:2px;
+    color:white;
+    font-size: 12px;
+    opacity: 1;
+    transition: 600ms 1s;
+}
 
+.comix:hover + .text1 + .text2 {
+    z-index: 4;
+    position:fixed;
+    left: 1067px;
+    top: 577px;
+    border:1px;
+    border-radius: 50%;
+    border-color: black;
+    background: white;
+    padding:8px;
+    color:white;
+    font-size: 8px;
+    opacity: 1;
+    transition: 600ms 2s;
+}
+
+.comix:hover + .text1 + .text2 + .text3 {
+    z-index: 4;
+    position:fixed;
+    left: 1020px;
+    top: 540px;
+    border:1px;
+    border-radius: 50%;
+    border-color: black;
+    background: white;
+    padding:15px;
+    color:white;
+    font-size: 8px;
+    opacity: 1;
+    transition: 600ms 3s;
+}
+
+.comix:hover + .text1 + .text2 + .text3 + .text4 {
+    z-index: 4;
+    position:fixed;
+    left: 895px;
+    top: 475px;
+    position:fixed;
+    border:1px;
+    border-radius: 80%;
+    border-color: black;
+    background: white;
+    padding:30px;
+    color:black;
+    font-size: 16px;
+    opacity: 1;
+    transition: 600ms 4s;
+}
