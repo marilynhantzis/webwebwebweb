@@ -13,8 +13,8 @@ header {
     color:lightgray; 
     padding:20px;
     font-size: 16pt;
-    width:100%;
     left:0;   
+    right:0;
 }
 
 
@@ -99,6 +99,11 @@ aside div {
     padding:10px;
     text-align: justify;
     text-indent:20px;
+}
+
+ol a {
+    color:green; 
+    text-decoration: none;
 }
 
 .comix {
