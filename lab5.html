@@ -49,6 +49,19 @@
                 output.style.backgroundColor = backColor;
                 output.style.color= textColor;
             }
+            function changeSumma() {
+                let summa = document.getElementById('summa')
+                let apple=document.getElementById('apple')
+                let a = parseInt(apple.value)* 100
+                let grushi=document.getElementById('grushi')
+                let b = parseInt(grushi.value) * 80
+                let orange=document.getElementById('orange')
+                let c = parseInt(orange.value) * 150
+                let melon=document.getElementById('melon')
+                let d = parseInt(melon.value) * 300
+                let sum = a+b+c+d
+                summa.innerHTML= 'Общая сумма: ' + sum + 'р';
+            }
         </script>
         <style>
             main {
@@ -64,6 +77,17 @@
                 color:white;
                 padding: 5px;
                 cursor: pointer;
+            }
+            .corzina {
+                color:brown;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 15px;
+                border: 3px solid;
+                border-color: brown;
+                border-radius: 10px;
+                padding: 5px;
+                text-align: center;
+                width:500px;
             }
             #output { 
                 border:1px solid;
@@ -93,6 +117,19 @@
                 <input type="button" value="Кнопка 4" onclick="changeOutput(4,'blue','white')">
             </div>
             <div id="output"></div>
+            <div class="corzina">
+                <h2>Корзина товаров</h2>
+                <label>Яблоки (100 руб/шт)</label> <br>
+                <input type="number" value="0" id="apple"> <br>
+                <label>Груши (80 руб/шт)</label> <br>
+                <input type="number" value="0" id="grushi"> <br>
+                <label>Апельсины (150 руб/шт)</label> <br>
+                <input type="number" value="0" id="orange"> <br>
+                <label>Дыни (300 руб/шт)</label> <br>
+                <input type="number" value="0" id="melon"> <br>
+                <input type="button" value="Расчитать" onclick="changeSumma()">
+                <div id="summa"></div>
+            </div>
         </main>
         <footer onclick="getAuthor()">
             &copy; <i>Тарбанаков Артем, ФБИ-14, 2 курс, 2023</i>
