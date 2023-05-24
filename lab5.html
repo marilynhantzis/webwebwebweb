@@ -62,6 +62,38 @@
                 let sum = a+b+c+d
                 summa.innerHTML= 'Общая сумма: ' + sum + 'р';
             }
+            function hideCircle(numB) {
+                if (numB == 1) {
+                    document.getElementById('circleA').style.visibility='hidden';
+                }
+                else if (numB == 2) {
+                document.getElementById('circleB').style.visibility='hidden';
+                } 
+                else if (numB == 3) {
+                    document.getElementById('circleC').style.visibility='hidden';
+                }
+                else if (numB == 4) {
+                document.getElementById('circleD').style.visibility='hidden';
+                }
+                else if (numB == 5) {
+                document.getElementById('circleE').style.visibility='hidden';
+                }
+                else if (numB == 6) {
+                document.getElementById('circleF').style.visibility='hidden';
+                }
+                else if (numB == 7) {
+                document.getElementById('circleG').style.visibility='hidden';
+                }
+                else if (numB == 8) {
+                document.getElementById('circleH').style.visibility='hidden';
+                }
+                else if (numB==9) {
+                document.getElementById('circleI').style.visibility='hidden';
+                }
+                else if (numB==10) {
+                document.getElementById('circleJ').style.visibility='hidden';
+                }
+            }
         </script>
         <style>
             main {
@@ -88,6 +120,19 @@
                 padding: 5px;
                 text-align: center;
                 width:500px;
+            }
+            .circle {
+                border: 3px solid;
+                border-color: brown;
+                border-radius: 50%;
+                height:50px;
+                width:50px;
+                text-align: center;
+                display: inline-block;
+                margin-top: 25px;
+                padding: 5px;
+                margin-right: 5px;
+                font-family: Arial, Helvetica, sans-serif;
             }
             #output { 
                 border:1px solid;
@@ -130,6 +175,16 @@
                 <input type="button" value="Расчитать" onclick="changeSumma()">
                 <div id="summa"></div>
             </div>
+            <div class="circle" id="circleA" style="background-color: antiquewhite;" onclick="hideCircle(1)">1</div>
+            <div class="circle" id="circleB" style="background-color:aquamarine" onclick="hideCircle(2)">2</div>
+            <div class="circle" id="circleC" style="background-color:blueviolet" onclick="hideCircle(3)">3</div>
+            <div class="circle" id="circleD" style="background-color: greenyellow" onclick="hideCircle(4)">4</div>
+            <div class="circle" id="circleE" style="background-color: hotpink" onclick="hideCircle(5)">5</div>
+            <div class="circle" id="circleF" style="background-color: khaki" onclick="hideCircle(6)">6</div>
+            <div class="circle" id="circleG" style="background-color: peru" onclick="hideCircle(7)">7</div>
+            <div class="circle" id="circleH" style="background-color: lightblue" onclick="hideCircle(8)">8</div>
+            <div class="circle" id="circleI" style="background-color: lavender" onclick="hideCircle(9)">9</div>
+            <div class="circle" id="circleJ" style="background-color: cornflowerblue" onclick="hideCircle(10)">10</div>
         </main>
         <footer onclick="getAuthor()">
             &copy; <i>Тарбанаков Артем, ФБИ-14, 2 курс, 2023</i>
