@@ -250,3 +250,19 @@ ol a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 50px;
 }
+
+.rules {
+    margin:auto;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    width:400px;
+    color: darkcyan;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px;
+}
+
+#rulestext {
+    display: none;
+}

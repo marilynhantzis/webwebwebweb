@@ -47,7 +47,17 @@
                 screens[1].style.display='block';
                 screens[2].style.display='none';
             }
-            
+            function showRules() {
+                let rule = document.getElementById('btn');
+                if (rule.innerHTML == 'Показать правила игры') {
+                    rule.innerHTML='Скрыть правила игры'
+                    document.getElementById('rulestext').style.display='block'
+                }
+                else if (rule.innerHTML == 'Скрыть правила игры') {
+                    rule.innerHTML='Показать правила игры'
+                    document.getElementById('rulestext').style.display='none'
+                }
+            }
         </script>
     </head>
     <body>
@@ -79,6 +89,18 @@
                 </div>
                 <div>
                     <button onclick="again()">Еще раз</button>
+                </div>
+            </div>
+            <div class="rules">
+                <button onclick="showRules()" value="Показать правила игры" id="btn">Показать правила игры</button>
+                <div id="rulestext">
+                    <ol>
+                        <li>Нажмите на кнопку "Сыграть в игру".</li>
+                        <li>Загаданное число неотрицательное.</li>
+                        <li>Число не может быть меньше 1.</li>
+                        <li>Число не может быть больше 100.</li>
+                        <li>Уменьшайте или увеличивайте введенное число в зависимости от текст на экране.</li>
+                    </ol>
                 </div>
             </div>
         </main>
