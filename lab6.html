@@ -58,6 +58,23 @@
                     document.getElementById('rulestext').style.display='none'
                 }
             }
+            function changeColor(div) {
+                let color = div.style.backgroundColor;
+                if (color=='yellow') {
+                div.style.backgroundColor='red'
+                document.getElementById('color-name').innerHTML='красный'
+                }
+                else if (color=='red') {
+                    div.style.backgroundColor='black'
+                    div.style.color='white'
+                    document.getElementById('color-name').innerHTML='черный'
+                }
+                else if (color=='black') {
+                    div.style.backgroundColor='green'
+                    div.style.color='white'
+                    document.getElementById('color-name').innerHTML='зеленый'
+                }
+            }
         </script>
     </head>
     <body>
@@ -102,6 +119,10 @@
                         <li>Уменьшайте или увеличивайте введенное число в зависимости от текст на экране.</li>
                     </ol>
                 </div>
+            </div>
+            <div class="color" ondblclick="changeColor(this)">
+                    Цвет: <span id="color-name">желтый</span><br>
+                    Сделайте двойной щелчок, чтобы сменить.
             </div>
         </main>
         <footer>

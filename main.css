@@ -266,3 +266,9 @@ ol a {
 #rulestext {
     display: none;
 }
+
+.color {
+    margin-top: 50px;
+    border: 2px solid;
+    background-color: yellow;
+}
