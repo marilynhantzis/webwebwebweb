@@ -272,3 +272,11 @@ ol a {
     border: 2px solid;
     background-color: yellow;
 }
+
+.tap {
+    margin-top: 50px;
+    border: 2px solid;
+    background-color: greenyellow;
+    width: 150px;
+    height: 150px;
+}

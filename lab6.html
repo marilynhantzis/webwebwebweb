@@ -59,20 +59,34 @@
                 }
             }
             function changeColor(div) {
-                let color = div.style.backgroundColor;
-                if (color=='yellow') {
+                if (document.getElementById('color-name').innerHTML=='желтый' ) {
                 div.style.backgroundColor='red'
                 document.getElementById('color-name').innerHTML='красный'
                 }
-                else if (color=='red') {
+                else if (document.getElementById('color-name').innerHTML=='красный') {
                     div.style.backgroundColor='black'
                     div.style.color='white'
                     document.getElementById('color-name').innerHTML='черный'
                 }
-                else if (color=='black') {
+                else if (document.getElementById('color-name').innerHTML=='черный') {
                     div.style.backgroundColor='green'
                     div.style.color='white'
                     document.getElementById('color-name').innerHTML='зеленый'
+                }
+                else if (document.getElementById('color-name').innerHTML=='зеленый') {
+                    div.style.backgroundColor='blue'
+                    div.style.color='white'
+                    document.getElementById('color-name').innerHTML='синий'
+                }
+                else if (document.getElementById('color-name').innerHTML=='синий') {
+                    div.style.backgroundColor='wheat'
+                    div.style.color='black'
+                    document.getElementById('color-name').innerHTML='бежевый'
+                }
+                else if (document.getElementById('color-name').innerHTML=='бежевый') {
+                    div.style.backgroundColor='yellow'
+                    div.style.color='black'
+                    document.getElementById('color-name').innerHTML='желтый'
                 }
             }
         </script>
@@ -123,6 +137,9 @@
             <div class="color" ondblclick="changeColor(this)">
                     Цвет: <span id="color-name">желтый</span><br>
                     Сделайте двойной щелчок, чтобы сменить.
+            </div>
+            <div class="tap">
+                Нажми на меня
             </div>
         </main>
         <footer>
