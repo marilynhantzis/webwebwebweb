@@ -89,7 +89,7 @@
                     document.getElementById('color-name').innerHTML='желтый'
                 }
             }
-            function changePosition(div) {
+            function changePosition() {
                 let d = document.getElementById('tapme');
                 if (d.style.left == '0px') {
                 d.style.left='91%'
@@ -99,6 +99,14 @@
                 else {
                     d.style.left='0px'
                     d.style.transform='rotate(4turn)'
+                }
+            }
+            function changeWidth() {
+                if (document.getElementById('widthblock').offsetWidth > 1000) {
+                    document.getElementById('widthblock').style.width='100px';
+                }
+                else {
+                    document.getElementById('widthblock').style.width = (document.getElementById('widthblock').offsetWidth + 50) + 'px'
                 }
             }
         </script>
@@ -150,8 +158,11 @@
                     Цвет: <span id="color-name">желтый</span><br>
                     Сделайте двойной щелчок, чтобы сменить.
             </div>
-            <div class="tap" id="tapme" onclick="changePosition(this)" value="привет">
+            <div class="tap" id="tapme" onclick="changePosition()" value="привет">
                 Щелкни меня 
+            </div>
+            <div class="widthblock" id="widthblock" onclick="changeWidth()" >
+                Больше
             </div>
         </main>
         <footer>

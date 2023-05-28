@@ -286,3 +286,16 @@ ol a {
     text-align: center;
     transform: rotate(0);
 }
+
+.widthblock {
+    margin-top: 300px;
+    margin-left: 900px;
+    border: 2px solid;
+    border-color: brown;
+    background-color: bisque;
+    cursor:pointer;
+    width: 100px;
+    text-align: center;
+    color:brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
