@@ -89,6 +89,18 @@
                     document.getElementById('color-name').innerHTML='желтый'
                 }
             }
+            function changePosition(div) {
+                let d = document.getElementById('tapme');
+                if (d.style.left == '0px') {
+                d.style.left='91%'
+                d.style.transform='rotate(4turn)'
+                d.style.transform='rotate(0)'
+                }
+                else {
+                    d.style.left='0px'
+                    d.style.transform='rotate(4turn)'
+                }
+            }
         </script>
     </head>
     <body>
@@ -138,8 +150,8 @@
                     Цвет: <span id="color-name">желтый</span><br>
                     Сделайте двойной щелчок, чтобы сменить.
             </div>
-            <div class="tap">
-                Нажми на меня
+            <div class="tap" id="tapme" onclick="changePosition(this)" value="привет">
+                Щелкни меня 
             </div>
         </main>
         <footer>

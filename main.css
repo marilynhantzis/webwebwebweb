@@ -279,4 +279,10 @@ ol a {
     background-color: greenyellow;
     width: 150px;
     height: 150px;
+    position:absolute;
+    left: 0px;
+    cursor:pointer;
+    transition: 600ms;
+    text-align: center;
+    transform: rotate(0);
 }
