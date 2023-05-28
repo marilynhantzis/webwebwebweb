@@ -109,6 +109,38 @@
                     document.getElementById('widthblock').style.width = (document.getElementById('widthblock').offsetWidth + 50) + 'px'
                 }
             }
+            function filter() {
+                let color = document.getElementById('wear-color').value
+                let type = document.getElementById('wear-type').value
+                let wear = document.getElementById('wear')
+                if (color == 'Красный' && type == 'Футболка') {
+                    wear.src='https://stroysklad.ru/image/cache/catalog/pics/futbolka-lyukc-kracnaya-korotkii-rukav-r-m-10000-228x228.jpg'
+                }
+                else if (color == 'Красный' && type == 'Поло') {
+                    wear.src = 'https://vester2013.ru/upload/resize_cache/iblock/532/190_243_1/rubashka_polo_krasnyy.jpg'
+                } 
+                else if (color == 'Красный' && type == 'Рубашка') {
+                    wear.src = 'https://www-s.mlo.me/upen/v/2017/201707/20170725/20170725140210929943.jpg'
+                }
+                else if (color == 'Белый' && type == 'Футболка') {
+                    wear.src = 'https://sc01.alicdn.com/kf/HTB1iBZzacTxK1Rjy0Fgq6yovpXam/235515207/HTB1iBZzacTxK1Rjy0Fgq6yovpXam.jpg'
+                }
+                else if (color == 'Белый' && type == 'Поло') {
+                    wear.src = 'https://www.bestshopping.es/WebRoot/StoreES/Shops/63731684/56CE/CA1B/4EBC/7525/23FC/C0A8/2AB9/5C78/Polo_hombre__124__Manga_corta__124__PO6605__124__Blanco.jpg'
+                }
+                else if (color == 'Белый' && type == 'Рубашка') {
+                    wear.src = 'https://sufab.ru/files/products/thumbnails/106102/965512.jpg'
+                }
+                else if (color == 'Черный' && type == 'Футболка') {
+                    wear.src = 'http://lojaimportado.com/image/gucci/clasico/4.jpg'
+                }
+                else if (color == 'Черный' && type == 'Поло') {
+                    wear.src = 'https://merchberu.ru/wp-content/uploads/2022/10/imgonline-com-ua-Resize-7Z8ydhXRF2kiIeh.jpg'
+                }
+                else if (color == 'Черный' && type == 'Рубашка') {
+                    wear.src = 'https://a.allegroimg.com/original/03f1de/9ff4655d4d029bc97af4b8c8cbf6'
+                }
+            }
         </script>
     </head>
     <body>
@@ -163,6 +195,22 @@
             </div>
             <div class="widthblock" id="widthblock" onclick="changeWidth()" >
                 Больше
+            </div>
+            <div class="filter">
+                Цвет одежды:
+                <select id="wear-color">
+                    <option>Красный</option>
+                    <option>Белый</option>
+                    <option>Черный</option>
+                </select> <br>
+                Тип одежды: 
+                <select id="wear-type">
+                    <option>Футболка</option>
+                    <option>Поло</option>
+                    <option>Рубашка</option>
+                </select> <br>
+                <button onclick="filter()" id="fltrbtn">Принять</button><br>
+                <img id="wear" height="350" width="350">
             </div>
         </main>
         <footer>

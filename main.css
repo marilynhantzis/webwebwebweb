@@ -299,3 +299,24 @@ ol a {
     color:brown;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.filter {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid;
+    background-color: honeydew;
+    width: 200px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    height: 150px;
+}
+
+#wear {
+    margin-left: 250px;
+    margin-top: -160px;
+}
+
+#fltrbtn {
+    margin-top: 15px;
+}
