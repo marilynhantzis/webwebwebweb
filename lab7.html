@@ -68,6 +68,16 @@
                     circles.appendChild(circ);
                 }
         }
+
+        function showTable() {
+            let tables = document.getElementById('table')
+            let c = 33
+            for (let i=13; i < (c+1); i++) {
+                let tablerow = document.createElement('div')
+                tablerow.innerHTML = i + ' * ' + c + ' = ' + (c*i)
+                tables.appendChild(tablerow)
+            }
+        }
         </script>
     </head>
     <body>
@@ -87,6 +97,8 @@
             <label>Введите число: <input type="number" placeholder="Например, 5" id="circlenum"></label>
             <button onclick="showCircle()">Красное/зеленое</button>
             <div id="circle"></div>
+            <button onclick="showTable()">Показать таблицу умножения</button>
+            <div id="table"></div>
         </main>
         <footer>
             &copy; <i>Тарбанаков Артем, ФБИ-14, 2 курс, 2023</i>
