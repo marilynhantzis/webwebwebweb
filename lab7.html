@@ -42,6 +42,32 @@
                     opas = opas + 10;
                 }
             }
+            
+            function showCircle() {
+                let circleyo = document.getElementById('circlenum')
+                let a = parseInt(circleyo.value);
+                let b = a
+                let circles = document.getElementById('circle')
+                for (let i = 0; i < b; i++) {
+                    let circ = document.createElement('div');
+                    circ.style.border="1px solid"
+                    circ.style.borderRadius="50%"
+                    circ.style.width="50px"
+                    circ.style.height="50px"
+                    circ.style.textAlign='center'
+                    circ.style.color='white'
+                    circ.style.marginTop="25px"
+                    if (a % 2 == 0) {
+                        circ.style.backgroundColor="green";
+                    }
+                    else {
+                        circ.style.backgroundColor="red";
+                    }
+                    circ.innerHTML = a;
+                    a = a - 1
+                    circles.appendChild(circ);
+                }
+        }
         </script>
     </head>
     <body>
@@ -57,6 +83,10 @@
 
             <button onclick="addTransparentBlocks()">Создать полупрозрачные блоки</button>
             <div id="transparent-blocks"></div>
+
+            <label>Введите число: <input type="number" placeholder="Например, 5" id="circlenum"></label>
+            <button onclick="showCircle()">Красное/зеленое</button>
+            <div id="circle"></div>
         </main>
         <footer>
             &copy; <i>Тарбанаков Артем, ФБИ-14, 2 курс, 2023</i>
