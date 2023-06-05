@@ -30,6 +30,18 @@
                 let average = sum / exchange.length;
                 document.getElementById('detail').innerHTML = 'Среднее значение: ' + average;
             }
+
+            function addTransparentBlocks() {
+                let opas = 10 
+                let tranblocks = document.getElementById("transparent-blocks")
+                for(let i = 0; i < 10; i++) {
+                    let block = document.createElement('div')
+                    block.innerHTML = "Значение непрозрачности: " + opas + '%'
+                    block.style.opacity= opas + '%'
+                    tranblocks.appendChild(block)
+                    opas = opas + 10;
+                }
+            }
         </script>
     </head>
     <body>
@@ -42,6 +54,9 @@
             <button onclick="showExchange()">Курс доллара</button>
             <table border="1" id="dollar-exchange"></table>
             <div id="detail"></div>
+
+            <button onclick="addTransparentBlocks()">Создать полупрозрачные блоки</button>
+            <div id="transparent-blocks"></div>
         </main>
         <footer>
             &copy; <i>Тарбанаков Артем, ФБИ-14, 2 курс, 2023</i>
