@@ -346,3 +346,9 @@ button {
     margin-top: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
+
+#time {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+}
