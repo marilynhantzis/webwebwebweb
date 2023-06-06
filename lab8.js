@@ -12,3 +12,18 @@ function showDate() {
     out4.innerHTML = 'Дата и время для норвежской локали: ' + today.toLocaleString('nb-NO');
 
 }
+
+function showDaysCount() {
+    let today = new Date();
+    let inputDate = document.querySelector('input[type=date]');
+    let birthday = new Date (inputDate.value);
+    let daysCount = (today - birthday)/1000/60/60/24;
+    daysCount = Math.floor (daysCount);
+    let datetime = document.querySelector('div[id=datetime]');
+    datetime.innerHTML = 'Вы родились около ' + daysCount + ' дней назад'
+}
+
+function deleteDays() {
+    document.querySelector('div[id=datetime]').innerHTML = '';
+    document.querySelector('input[type=date]').value='';
+}
