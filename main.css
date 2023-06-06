@@ -333,10 +333,11 @@ ol a {
 }
 
 #datetime {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
-    color: maroon;
+    color: black;
     margin-bottom: 25px;
+    font-weight: bolder;
 }
 
 button {
